@@ -1,0 +1,95 @@
+/* Navbar background */
+.custom-navbar {
+  background-color: #121212;
+  padding: 20px 100px;
+}
+
+/* Container for navbar content */
+.custom-navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo, links, and buttons */
+  width: 100%;
+}
+
+/* Logo */
+.brand {
+  color: white !important;
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+/* Navbar content wrapper */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the navigation links */
+  flex-grow: 1; /* Allow content to take available space */
+}
+
+/* Centered Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Spacing between links */
+  border: 1px solid rgb(255, 255, 255,0.4) !important;
+  border-radius: 20px;
+  padding: 10px 50px;
+  background-color: #1E1E1E;
+  margin: 0 200px 0 0;
+}
+
+/* Individual link */
+.nav-link-custom {
+  color: white !important;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+  background-color: transparent;
+}
+
+.nav-link-custom:hover {
+  color: #BB86FC !important;
+}
+
+/* Auth Buttons (Aligned to Right) */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+/* Login Button */
+.login-btn {
+  border: 1px solid rgb(255, 255, 255,0.4) !important;
+  color: white !important;
+  border-radius: 20px;
+  font-weight: 800;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+  background-color: #1E1E1E;
+}
+
+.login-btn:hover {
+  background-color: white !important;
+  color: #121212 !important;
+}
+
+/* Sign Up Button */
+.signup-btn {
+  background-color: #BB86FC !important;
+  border-radius: 20px;
+  font-weight: 800;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #9b6fcf !important;
+}

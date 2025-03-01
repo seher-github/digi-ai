@@ -1,0 +1,78 @@
+.steps{
+  height: 80vh;
+  background-color: #181818;
+}
+.steps-section {
+    padding: 20px 100px;
+    color: white;
+  }
+  .row {
+    display: flex;  /* Bootstrap already uses flexbox, so you may not need this */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /* Ensure proper spacing */
+  }
+  
+  .steps-right{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%; /* Keep this at 50% width */
+    padding: 40px; 
+  }
+  .steps-left{
+    
+    align-items: flex-start;
+    min-height: 400px;
+    text-align: left;
+    background-color: transparent;
+    width: 50%; 
+    padding: 40px;
+  }
+  .step-item {
+    display: flex;
+    align-items: center;
+    margin: 40px 10px;
+  }
+  
+  .step-circle {
+    width: 40px;
+    height: 40px;
+    background: #bb86fc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-right: 15px;
+  }
+  
+  .step-text {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  
+  .steps-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #e0e0e0;
+  }
+  
+  .steps-description {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #e0e0e0;
+  }
+  
+  .steps-subtext {
+    font-size: 16px;
+    font-weight: 800;
+    color: #bb86fc;
+  }
+  

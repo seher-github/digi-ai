@@ -1,0 +1,102 @@
+.about{
+  height: 80vh;
+  background-color: #181818;
+}
+.about-us-container { 
+  color: #e0e0e0; /* Light text color */
+  padding: 20px 100px;
+}
+
+/* Row layout fix */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Left Column: Background Image + Text (Keeping it as it was) */
+.left-column {
+  width: 50%; /* Takes half the width */
+  height: 100%;
+  background-image: url('../../../Assets/bg.png'); /* Ensure correct path */
+  background-size: contain; /* Keeps the full image but adjusts within the div */
+  background-position: left center; /* Aligns to the left */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+}
+.text-content {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.small-heading {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #BB86FC;
+  margin-bottom: 10px;
+}
+
+.big-heading {
+  font-size: 48px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0;
+}
+
+/* Right Column Fix: Stopping it from taking full width */
+.right-column {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%; /* Keep this at 50% width */
+  padding: 40px; /* Adjusted padding */
+}
+
+/* Content inside Right Column */
+.right-content {
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Paragraph styling */
+.about-description {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.explore-more-btn {
+  background-color: #BB86FC !important;
+  border-radius: 20px;
+  font-weight: 800;
+  color: black !important;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+
+.explore-more-btn:hover {
+  background-color: #9b6fcf !important;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%; /* Stack on mobile */
+  }
+
+  .right-column {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+}

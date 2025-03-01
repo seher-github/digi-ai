@@ -1,0 +1,70 @@
+.why-digi-ai {
+    padding: 80px 100px;
+    color: white;
+    position: relative;
+    height: 80vh;
+    background-color: #121212;
+  }
+  
+  .section-subtitle {
+    color: #bb86fc;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .right-col{
+    width: 50%;
+  }
+  .section-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #e0e0e0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .features {
+    font-size: 20px;
+    font-weight: 400;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  
+  .explore-btn {
+    background: #bb86fc;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 800;
+    font-size: 16px;
+    color: black;
+    margin: 10px 0;
+  }
+  .left-col{
+    width: 50%;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .image-wrapper img{ 
+  clip-path: inset(0px 0px 32px 0px); 
+  }
+  
+  .infographic-img {
+    width: 430px;
+    height: 393px;
+    filter: blur(0px);
+  }
+  
+  .blurred-circle {
+    width: 264px;
+    height: 224px;
+    background: rgba(135, 65, 224, 0.43);
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    filter: blur(120px);
+    border-radius: 50%;
+  }
+  

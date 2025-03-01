@@ -1,0 +1,59 @@
+.services{
+  height: 80vh;
+  background-color: #121212;
+  display: flex;  /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; 
+}
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 100px;
+  }
+  
+  .service-card {
+    background: #1e1e1e;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    height: 280px !important;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth effect */
+}
+
+.service-card:hover {
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5); /* Deeper shadow for 3D effect */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+  .service-title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+  }
+  
+  .service-description {
+    background-color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+  
+  .explore-btn {
+    background-color: #bb86fc !important;
+    border-radius: 20px;
+    font-weight: 800;
+    color: black !important;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1e1e1e;
+  }
+  
