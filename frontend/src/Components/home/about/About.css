@@ -1,38 +1,39 @@
-.about{
+.about {
   height: 80vh;
   background-color: #181818;
+  background-image: url('../../../Assets/bg.png'); /* Ensure correct path */
+  background-size: contain; 
+  background-position: -220px center; /* Moves the image left */
+  background-repeat: no-repeat;
 }
 .about-us-container { 
   color: #e0e0e0; /* Light text color */
   padding: 20px 100px;
 }
 
-/* Row layout fix */
+/* Row layout */
 .row {
-  display: flex;
+  display: flex;  
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* Left Column: Background Image + Text (Keeping it as it was) */
+/* Left Column: Text  */
 .left-column {
   width: 50%; /* Takes half the width */
   height: 100%;
-  background-image: url('../../../Assets/bg.png'); /* Ensure correct path */
-  background-size: contain; /* Keeps the full image but adjusts within the div */
-  background-position: left center; /* Aligns to the left */
-  background-repeat: no-repeat;
   display: flex;
   align-items: center; /* Centers content vertically */
   justify-content: center; /* Centers content horizontally */
 }
 .text-content {
-  padding: 20px;
+  padding: 20px 60px;
   border-radius: 10px;
 }
 
 .small-heading {
-  font-size: 24px;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #BB86FC;
@@ -47,7 +48,7 @@
   margin-bottom: 0;
 }
 
-/* Right Column Fix: Stopping it from taking full width */
+/* Right Column  */
 .right-column {
   display: flex;
   align-items: flex-start;

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Button } from "react-bootstrap"
 import "./Hero.css"
+import TextSlider from '../slider/TextSlider'
 
 
 const Hero = () => {
@@ -18,7 +19,9 @@ const Hero = () => {
       <Button variant="primary" className="get-started-btn">Get Started</Button>
     </div>
     <p className="hero-services">Services you are going to experience</p>
+    <TextSlider />
   </Container>
+ 
   </div>
   )
 }

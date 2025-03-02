@@ -21,3 +21,12 @@ export const servicesData = [
     { number: "02", text: "Launch Smart Campaigns" },
     { number: "03", text: "Monitor & Optimize with AI Insights" },
   ];
+  export const services = [
+    "Marketing Strategies",
+    "Predictive Analytics",
+    "Automated Content",
+    "Marketing Campaigns",
+    "Chatbots",
+    "SEO Optimization",
+    "Email Marketing"
+  ];
