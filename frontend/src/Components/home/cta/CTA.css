@@ -49,4 +49,65 @@
   .cta-button:hover {
     background: #333;
   }
-  
+  /* 🔹 Tablets (992px and below) */
+@media (max-width: 992px) {
+  .cta {
+    padding: 20px 50px;
+    height: auto;
+  }
+
+  .cta-container {
+    margin: 0px 100px;
+  }
+
+  .cta-title {
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+}
+
+/* 🔹 Mobile (768px and below) */
+@media (max-width: 768px) {
+  .cta {
+    padding: 20px;
+  }
+
+  .cta-container {
+    margin: 0px 50px;
+  }
+
+  .cta-title {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+  }
+
+  .cta-subtitle {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
+/* 🔹 Small Mobile (576px and below) */
+@media (max-width: 576px) {
+  .cta-container {
+    margin: 0px 20px;
+  }
+
+  .cta-title {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .cta-subtitle {
+    font-size: 12px;
+  }
+
+  .cta-button {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+}

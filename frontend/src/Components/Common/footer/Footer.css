@@ -82,7 +82,94 @@
     font-size: 20px;
     font-weight: 600;
   }
-  
+  /* 🔹 Tablets (992px and below) */
+@media (max-width: 992px) {
+  .footer {
+    height: auto;
+    padding: 40px 50px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 50px;
+  }
+
+  .footer-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/* 🔹 Mobile (768px and below) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-content {
+    padding: 40px 30px;
+  }
+
+  .footer-brand h2 {
+    font-size: 32px;
+  }
+
+  .footer-text {
+    font-size: 18px;
+  }
+
+  .footer-section h4 {
+    font-size: 22px;
+  }
+
+  .footer-section ul li a {
+    font-size: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 18px;
+  }
+}
+
+/* 🔹 Small Mobile (576px and below) */
+@media (max-width: 576px) {
+  .footer-content {
+    padding: 30px 20px;
+  }
+
+  .footer-brand h2 {
+    font-size: 28px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+
+  .footer-section h4 {
+    font-size: 20px;
+  }
+
+  .footer-section ul li a {
+    font-size: 16px;
+  }
+
+  .footer-bottom p {
+    font-size: 16px;
+  }
+
+  .signup-btn {
+    padding: 8px 25px;
+    font-size: 14px;
+  }
+}
+
   
   
   

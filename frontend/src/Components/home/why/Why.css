@@ -67,4 +67,77 @@
     filter: blur(120px);
     border-radius: 50%;
   }
-  
+  /* 🔹 Tablets (992px and below) */
+@media (max-width: 992px) {
+  .why-digi-ai {
+    padding: 60px 50px;
+    height: auto;
+    text-align: center;
+  }
+
+  .right-col, .left-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .infographic-img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* 🔹 Mobile (768px and below) */
+@media (max-width: 768px) {
+  .why-digi-ai {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .features {
+    font-size: 18px;
+  }
+
+  .explore-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .infographic-img {
+    width: 70%;
+  }
+
+  .blurred-circle {
+    width: 200px;
+    height: 180px;
+    filter: blur(100px);
+  }
+}
+
+/* 🔹 Small Mobile (576px and below) */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 30px;
+  }
+
+  .features {
+    font-size: 16px;
+  }
+
+  .infographic-img {
+    width: 60%;
+  }
+
+  .blurred-circle {
+    width: 150px;
+    height: 140px;
+    filter: blur(80px);
+  }
+}

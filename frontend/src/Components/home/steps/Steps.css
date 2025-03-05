@@ -75,4 +75,79 @@
     font-weight: 800;
     color: #bb86fc;
   }
-  
+  /* 🔹 Responsive Fix for Tablets (992px and below) */
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column; /* Stack content */
+    text-align: center;
+  }
+
+  .steps-right, .steps-left {
+    width: 100%; /* Full width */
+    text-align: center;
+    align-items: center;
+  }
+
+  .steps-left {
+    min-height: auto; /* Adjust height */
+  }
+
+  .step-item {
+    justify-content: center; /* Center steps */
+    text-align: center;
+  }
+}
+
+/* 🔹 Mobile (768px and below) */
+@media (max-width: 768px) {
+  .steps {
+    height: auto; /* Allow dynamic height */
+    padding: 40px 20px;
+  }
+
+  .steps-section {
+    padding: 20px;
+  }
+
+  .steps-heading {
+    font-size: 36px; /* Reduce heading size */
+  }
+
+  .steps-description {
+    font-size: 18px; /* Reduce text size */
+  }
+
+  .step-circle {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .step-text {
+    font-size: 18px;
+  }
+  .steps-right {
+    order: -1; /* Moves the right column above the left */
+  }
+}
+
+/* 🔹 Small Mobile (576px and below) */
+@media (max-width: 576px) {
+  .steps-heading {
+    font-size: 30px;
+  }
+
+  .steps-description {
+    font-size: 16px;
+  }
+
+  .step-item {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .step-circle {
+    margin-bottom: 10px;
+  }
+}
