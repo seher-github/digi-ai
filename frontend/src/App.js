@@ -1,5 +1,5 @@
 import './App.css';
-import Back from './Components/Common/back/Back';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from './Components/Common/footer/Footer';
 import Header from './Components/Common/header/Header';
 import Home from './Components/home/Home';
@@ -8,7 +8,14 @@ function App() {
   return (
     <div>
       <Header />
-      <Home />
+      <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      { /* <Route path="about" element={<About />} />
+        <Route path="services" element={<Services />} />
+        <Route path="contact" element={<Contact />} />*/}
+      </Routes>
+    </Router>
       <Footer />
     </div>
   );
