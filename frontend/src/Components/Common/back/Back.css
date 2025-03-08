@@ -49,6 +49,7 @@
   
   /* Text Container */
   .text-content {
+    width: 50%;
     text-align: left;
     position: relative;
     z-index: 1;
@@ -62,10 +63,12 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    display: block;
   }
   
   /* Main Heading */
   .main-heading {
+    display: block;
     color: #ffffff;
     font-size: 40px;
     font-weight: 700;
@@ -73,27 +76,122 @@
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
   
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .hero-section {
-      height: auto;
-      text-align: center;
-      padding: 40px 20px;
-    }
-  
-    .main-heading {
-      font-size: 32px;
-    }
-  
-    .small-heading {
-      font-size: 12px;
-    }
-  
-    .hero-section::before,
-    .hero-section::after {
-      width: 400px;
-      height: 200px;
-      filter: blur(150px);
-    }
+  /* Large Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .hero-section {
+    height: 70vh;
+    padding: 30px;
   }
+
+  .text-content {
+    width: 60%;
+  }
+
+  .main-heading {
+    font-size: 36px;
+  }
+
+  .small-heading {
+    font-size: 13px;
+  }
+
+  .hero-image {
+    height: 400px;
+  }
+
+  .hero-section::before,
+  .hero-section::after {
+    width: 350px;
+    height: 250px;
+    filter: blur(120px);
+  }
+}
+
+/* Tablets & Small Laptops (768px and below) */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .text-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-heading {
+    font-size: 32px;
+  }
+
+  .small-heading {
+    font-size: 12px;
+  }
+
+  .hero-image {
+    height: 350px;
+    margin-top: 20px;
+  }
+
+  .hero-section::before,
+  .hero-section::after {
+    width: 300px;
+    height: 200px;
+    filter: blur(100px);
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 20px;
+  }
+
+  .main-heading {
+    font-size: 28px;
+  }
+
+  .small-heading {
+    font-size: 11px;
+  }
+
+  .hero-image {
+    height: 250px;
+  }
+
+  .hero-section::before,
+  .hero-section::after {
+    width: 250px;
+    height: 150px;
+    filter: blur(80px);
+  }
+}
+
+/* Extra Small Devices (360px and below) */
+@media (max-width: 360px) {
+  .hero-section {
+    padding: 15px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .small-heading {
+    font-size: 10px;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+
+  .hero-section::before,
+  .hero-section::after {
+    width: 200px;
+    height: 120px;
+    filter: blur(60px);
+  }
+}
+
   

@@ -1,0 +1,202 @@
+
+.ai-form-container {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 50px 100px;
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+}
+
+.form-title {
+  text-align: left;
+  font-weight:bolder;
+  font-size: 38px;
+  margin-bottom: 38px;
+}
+
+.form-group {
+  margin-bottom: 50px;
+ 
+}
+
+label {
+  color: #BB86FC;
+  font-weight: 700;
+  font-size: 16px;
+ margin: 30px 0 !important;
+}
+.left , .right{
+  width: 50% !important;
+}
+.form-control,
+.form-select {
+  background-color: #121212;
+  border: 1px solid #000000;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 20px;
+  width: 500px;
+  box-shadow: 10px 0 10px rgba(71, 71, 71, 0.1);
+  margin:20px 0px 40px 0;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #2a2a2a;
+  color: white;
+  box-shadow: none;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding:  10px 0;
+}
+.checkbox-group .form-check label {
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.submit-btn {
+  width: 500px;
+  background-color: #a560e8;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #8a40d6;
+}
+
+/* Large Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .ai-form-container {
+    padding: 40px 60px;
+    height: auto;
+  }
+
+  .form-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .form-control,
+  .form-select,
+  .submit-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .ai-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column; /* Stack left and right columns */
+  }
+
+  .left, .right {
+    width: 100% !important; /* Make both columns full width */
+  }
+
+  .submit-btn {
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Adds space after the last input */
+    order: 1; /* Moves the button to the last position */
+  }
+
+  /* Ensure form groups and checkboxes take full width */
+  .form-group,
+  .checkbox-group {
+    width: 100%;
+  }
+}
+
+
+/* Tablets & Small Laptops (768px and below) */
+@media (max-width: 768px) {
+  .ai-form-container {
+    padding: 30px;
+  }
+
+  .form-title {
+    font-size: 28px;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  .form-control,
+  .form-select,
+  .submit-btn {
+    width: 100%;
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .ai-form-container {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .form-control,
+  .form-select,
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .checkbox-group .form-check label {
+    font-size: 12px;
+  }
+}
+
+/* Extra Small Devices (360px and below) */
+@media (max-width: 360px) {
+  .ai-form-container {
+    padding: 15px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .form-control,
+  .form-select,
+  .submit-btn {
+    width: 100%;
+    padding: 8px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  .checkbox-group .form-check label {
+    font-size: 11px;
+  }
+}
