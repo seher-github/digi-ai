@@ -1,5 +1,5 @@
 .services{
-  height: 80vh;
+  min-height: 80vh;
   background-color: #121212;
   display: flex;  /* Enables flexbox */
   justify-content: center; /* Centers horizontally */

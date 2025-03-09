@@ -1,174 +1,148 @@
 .about {
-  height: 80vh;
+  min-height: 80vh;
   background-color: #181818;
   background-image: url('../../../Assets/bg.png'); /* Ensure correct path */
-  background-size: contain; 
+ background-size: contain; 
   background-position: -220px center; /* Moves the image left */
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
-.about-us-container { 
-  color: #e0e0e0; /* Light text color */
-  padding: 20px 100px;
-}
-
-/* Row layout */
-.row {
+.about-section {
+  color: #fff; /* White text */
+  padding: 80px 100px;
   display: flex;  
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-
-/* Left Column: Text  */
 .left-column {
-  width: 50%; /* Takes half the width */
-  height: 100%;
-  display: flex;
-  align-items: center; /* Centers content vertically */
-  justify-content: center; /* Centers content horizontally */
-}
-.text-content {
+  text-align: left;
+  width: 50%;
   padding: 20px 60px;
-  border-radius: 10px;
-}
-
-.small-heading {
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #BB86FC;
-  margin-bottom: 10px;
-}
-
-.big-heading {
-  font-size: 48px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: white;
-  margin-bottom: 0;
-}
-
-/* Right Column  */
-.right-column {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 50%; /* Keep this at 50% width */
-  padding: 40px; /* Adjusted padding */
 }
 
-/* Content inside Right Column */
-.right-content {
-  max-width: 500px;
+.subheading {
+  color: #a259ff; /* Purple accent */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.big-heading {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.right-column {
   text-align: left;
+  width: 50%;
+  padding: 40px;
 }
 
-/* Paragraph styling */
 .about-description {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  line-height: 1.6;
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-/* Button styling */
-.explore-more-btn {
-  background-color: #BB86FC !important;
-  border-radius: 20px;
-  font-weight: 800;
-  color: black !important;
+.about-button {
+  background-color: #a259ff;
+  border: none;
   padding: 10px 20px;
-  transition: 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
 }
 
-.explore-more-btn:hover {
-  background-color: #9b6fcf !important;
+.about-button:hover {
+  background-color: #8a3dd7;
 }
-/* For large tablets and smaller desktops */
-@media (max-width: 1200px) {
-  .about-us-container {
-    padding: 20px 50px;
+
+
+@media (max-width: 992px) {
+  .about {
+    height: fit-content;
+    background-size: contain; 
+  background-position: -220px center; /* Moves the image left */
+  background-repeat: no-repeat; 
   }
-  .text-content {
-    padding: 20px 40px;
+
+  .about-section {
+    flex-direction: column;
+    padding: 50px 40px;
+    text-align: center;
   }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 20px;
+  }
+
   .big-heading {
-    font-size: 40px;
+    font-size: 42px; /* Slightly smaller for better fit */
   }
+
   .about-description {
     font-size: 18px;
   }
-}
 
-/* For tablets */
-@media (max-width: 992px) {
-  .about {
-    height: auto; /* Adjust height dynamically */
-    padding: 50px 0;
-  }
-  .about-us-container {
-    padding: 20px 40px;
-  }
-  .left-column, .right-column {
-    width: 100%; /* Stack content */
-  }
-  .text-content {
-    text-align: center;
-    padding: 20px 30px;
-  }
-  .big-heading {
-    font-size: 36px;
-  }
-  .about-description {
-    font-size: 16px;
-    text-align: center;
-  }
-  .right-column {
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* For large smartphones */
-@media (max-width: 768px) {
-  .about-us-container {
-    padding: 15px 30px;
-  }
-  .big-heading {
-    font-size: 32px;
-  }
-  .about-description {
+  .about-button {
+    padding: 10px 18px;
     font-size: 14px;
   }
-  .right-content {
-    max-width: 100%;
-  }
 }
 
-/* For small smartphones */
-@media (max-width: 480px) {
+/* Small screens (tablets, 768px and below) */
+@media (max-width: 768px) {
   .about {
-    height: auto;
-    padding: 40px 0;
+    padding: 40px 20px;
   }
-  .about-us-container {
-    padding: 10px 20px;
+
+  .about-section {
+    padding: 40px 20px;
   }
-  .text-content {
-    padding: 15px 20px;
-  }
+
   .big-heading {
-    font-size: 28px;
+    font-size: 34px;
   }
+
   .about-description {
-    font-size: 13px;
+    font-size: 16px;
   }
-  .explore-more-btn {
-    padding: 8px 15px;
-    font-size: 12px;
+
+  .about-button {
+    font-size: 14px;
+    padding: 8px 16px;
     border-radius: 15px;
   }
 }
 
+
+/* Extra small screens (mobile, 480px and below) */
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .big-heading {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .about-button {
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 15px;
+  }
+}
