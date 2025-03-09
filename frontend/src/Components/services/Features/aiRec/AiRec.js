@@ -36,9 +36,7 @@ const AiRec = () => {
                 <Form.Check type="radio" label="Social" name="adType" />
               </div>
             </Form.Group>
-            <Button variant="primary" type="submit" className="submit-btn">
-          Submit
-        </Button>
+            
           </Col>
 
           {/* Right Side Inputs */}
@@ -68,8 +66,11 @@ const AiRec = () => {
               </div>
             </Form.Group>
           </Col>
+          <Button variant="primary" type="submit" className="submit-btn">
+          Submit
+        </Button>
         </Row>
-
+        
        
       </Form>
     </div>
