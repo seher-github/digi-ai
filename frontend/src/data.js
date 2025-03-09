@@ -19,6 +19,26 @@ export const servicesData = [
     description: "Enhance customer engagement with intelligent, real-time chat assistance.",
     path: "/ai-chatbot",
   },
+  {
+    title: "Budget Optimization",
+    description: "Maximize ROI by allocating marketing budgets efficiently with AI.",
+    path: "/ai-chatbot",
+  },
+  {
+    title: "Feedback & Surveys",
+    description: "Gather customer insights through AI-powered feedback and survey analysis.",
+    path: "/ai-chatbot",
+  },
+  {
+    title: "Campaign Creation",
+    description: "Automate and optimize marketing campaign creation for better results.",
+    path: "/ai-chatbot",
+  },
+  {
+    title: "Email Automation",
+    description: "Enhance engagement with AI-driven personalized email campaigns.",
+    path: "/ai-chatbot",
+  },
 ];
 
 

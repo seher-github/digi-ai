@@ -13,16 +13,11 @@ const Header = () => {
         {/* Use Link for brand navigation */}
         <Navbar.Brand as={Link} to="/" className="brand">DIGI-AI</Navbar.Brand>
 
-        {/* Toggle Button */}
-        <Navbar.Toggle 
-          aria-controls="basic-navbar-nav" 
-          onClick={() => setExpanded(expanded ? false : true)}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
+       
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
 
-        {/* Navbar Collapse */}
-        <Navbar.Collapse id="basic-navbar-nav">
+      
           <Nav className="navbar-content">
             <Nav className="nav-links">
               {/* Use `as={Link}` instead of `to` for React Router */}
