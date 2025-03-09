@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "./Scard.css";
 import { servicesData } from '../../../data';
+import { Link } from 'react-router-dom';
 
 const Scard = () => {
   return (
@@ -14,7 +15,7 @@ const Scard = () => {
                 <Card.Body>
                   <Card.Title className="service-title">{service.title}</Card.Title>
                   <Card.Text className="service-description">{service.description}</Card.Text>
-                  <Button className="explore-btn">Explore More</Button>
+                  <Link to={service.path} className="explore-btn">Explore More</Link>
                 </Card.Body>
               </Card>
             </Col>

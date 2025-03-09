@@ -55,6 +55,7 @@
     padding: 10px 20px;
     border: none;
     background-color: #1e1e1e;
+    text-decoration: none;
   }
   /* For large tablets and smaller desktops */
 @media (max-width: 1200px) {
